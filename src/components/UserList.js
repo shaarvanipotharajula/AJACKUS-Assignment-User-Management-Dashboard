@@ -59,7 +59,10 @@ const UserList = () => {
 
   const handleSaveUser = (savedUser) => {
     if (isAdding) {
-      setUsers((prev) => [...prev, savedUser]);
+      const newId = users.length > 0 ? Math.max(...users.map((user) => user.id)) + 1 : 1;
+    const newUser = { ...savedUser, id: newId }; 
+    setUsers((prev) => [...prev, newUser]);
+      // setUsers((prev) => [...prev, savedUser]);
     } else {
       setUsers((prev) =>
         prev.map((user) => (user.id === savedUser.id ? savedUser : user))
@@ -67,7 +70,7 @@ const UserList = () => {
     }
     setShowForm(false);
   };
-
+  
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
