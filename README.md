@@ -1,3 +1,65 @@
+### OBJECTIVE
+Develop a simple web application where users can view, add, edit, and delete user details from a mock backend API.
+### REQUIREMENTS
+`User Interface`:
+Display a list of users with details such as ID, First Name, Last Name, Email, and Department.
+Provide buttons or links to "Add", "Edit", and "Delete" users.
+A form to input details of a new user or edit details of an existing user.
+
+`Backend Interaction`:
+Use JSONPlaceholder, a free online REST API that you can use for demonstration and test purposes.
+Specifically, use the '/users' endpoint to fetch and manipulate user data.
+
+`Functionality`:
+View: Display all users by fetching data from the '/users' endpoint.
+Add: Allow adding a new user by posting to the '/users' endpoint. (Note: JSONPlaceholder won't actually add the user, but will simulate a successful response.)
+Edit: Allow editing an existing user. This should involve fetching the current data for a user, allowing for edits, and then putting the updated data back via the API.
+Delete: Allow users to be deleted, by sending a delete request to the API.
+
+`Error Handling`:
+Handle scenarios where the API request might fail - show an error message to the user in such cases.
+
+`Bonus (Optional)`:
+Implement pagination or infinite scrolling for the user list.
+Add client-side validation for the user input form.
+Make the interface responsive.
+
+### Installation steps
+Run these in the terminal 
+1) npm install react-icons
+2) npm install axios
+3) npm start
+
+### Working 
+> When clicked on the user card, the details of that paticular user gets displayed.
+> You can make changes(edit) in the details if wanted and click on save to make the changes. Orelse when clicked on cancel you will go back to users page
+> If you want to delete the paticular user, click the delete icon which is present on the top-right corner of the card, once clicked it asks for a confirmation, if clicked on 'OK', the user gets deleted if clicked on 'Cancel' it gets back to user page without deleting the user
+> To add new user, click on 'Add User' button on the right corner and start to fill details and click on save to add that user.
+> If any of the details is not filled, an error message with "All fields are required" will be displayed.
+***Note: All details must be filled in order to save the new user.
+
+### Github user
+https://github.com/shaarvanipotharajula
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
